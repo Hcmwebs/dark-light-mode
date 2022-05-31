@@ -1,11 +1,14 @@
 import './index.scss'
 
 import React from 'react'
+import Header from './Components/Header/Header'
 
 const App = () => {
 	return (
 		<>
-			<header>header component goes here</header>
+			<header>
+				<Header />
+			</header>
 			<main>Main component goes here</main>
 		</>
 	)
