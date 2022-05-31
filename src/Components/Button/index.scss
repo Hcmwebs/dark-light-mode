@@ -1,0 +1,30 @@
+$darkColor: rgb(6, 20, 19);
+$lightColor: rgb(235, 250, 248);
+
+.toggle {
+	width: 3.125rem;
+	height: 1.5rem;
+	border-radius: 2rem;
+	border: 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	background-color: $darkColor;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+
+	.moon {
+		display: none;
+	}
+	.marker {
+		content: '';
+		width: 1.5rem;
+		height: 1.5rem;
+		background-color: $lightColor;
+		border-radius: 50%;
+	}
+
+	.sun {
+		display: none;
+	}
+}
