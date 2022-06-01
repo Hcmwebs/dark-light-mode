@@ -13,8 +13,24 @@ $lightColor: rgb(235, 250, 248);
 	align-items: center;
 	transition: all 0.3s ease-in-out;
 
+	&.dark-mode {
+		.moon {
+			display: block;
+			color: gold;
+			padding-inline-start: 0.2rem;
+		}
+	}
+	&.light-mode {
+		.sun {
+			display: block;
+			color: gold;
+			padding-inline-end: 0.2rem;
+		}
+	}
+
 	.moon {
 		display: none;
+		font-size: 1.4rem;
 	}
 	.marker {
 		content: '';
@@ -26,5 +42,6 @@ $lightColor: rgb(235, 250, 248);
 
 	.sun {
 		display: none;
+		font-size: 1.4rem;
 	}
 }
