@@ -2,7 +2,7 @@ import React from 'react'
 import './index.scss'
 
 import { MdLightMode, MdDarkMode } from 'react-icons/md'
-import Button from '../Button/Button'
+import Button from '../Button'
 
 const Header = () => {
 	return (
