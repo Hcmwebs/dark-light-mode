@@ -6,10 +6,12 @@ import Button from '../Button/Button'
 
 const Header = () => {
 	return (
-		<header className='container'>
-			<h1>The Fuse</h1>
-			<Button MdLightMode={MdLightMode} MdDarkMode={MdDarkMode} />
-		</header>
+		<div className='container'>
+			<header>
+				<h1>The Fuse</h1>
+				<Button MdLightMode={MdLightMode} MdDarkMode={MdDarkMode} />
+			</header>
+		</div>
 	)
 }
 
