@@ -4,7 +4,7 @@ import './index.scss'
 const Button = ({MdLightMode,MdDarkMode}) => {
 	return (
 		<>
-			<div className='toggle'>
+			<div className='toggle dark-mode'>
 				<MdDarkMode className='moon' />
 				<div className='marker'></div>
 				<MdLightMode className='sun' />
