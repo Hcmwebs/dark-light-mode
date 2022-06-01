@@ -1,22 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-$darkColor: rgb(6, 20, 19);
-$lightColor: rgb(235, 250, 248);
-$primaryColor: rgb(58, 202, 187);
-
 :root {
-	background-color: $lightColor;
-	color: $darkColor;
+	$fontColor: rgb(6, 20, 19);
+	$bgColor: rgb(235, 250, 248);
 	$primaryColor: rgb(58, 202, 187);
 }
 .light-theme {
-	background-color: $lightColor;
-	color: $darkColor;
+	background-color: $fontColor;
+	color: $bgColor;
 	$primaryColor: rgb(58, 202, 187);
 }
 .dark-theme {
-	background-color: $darkColor;
-	color: $lightColor;
+	background-color: $bgColor;
+	color: $fontColor;
 	$primaryColor: rgb(97, 213, 201);
 }
 
