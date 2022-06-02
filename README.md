@@ -9,6 +9,8 @@ It is part of my learning progress javascript and in particular [reactJs](https:
 - [ReactJs](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
 
+-[momentjs](https://momentjs.com/)
+
 ## Acknowledgements
 
 - [@john-smilga](https://github.com/john-smilga) - Created and taught a [reactjs course on Udemy](https://www.udemy.com/course/react-tutorial-and-projects-course) with corresponding projects. I cannot thank you enough, sir.
