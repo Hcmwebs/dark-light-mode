@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.post {
+	@include grid(start);
+	gap: 1rem;
+	text-align: left;
+	border-radius: 0.2rem;
+	padding: 1rem 2rem;
+
+  &-info{
+    @include flex(row,center,center);
+    gap: .5rem;
+
+    span{
+      font-size: .7rem;
+      font-weight: 300;
+      font-style: italic;
+      text-transform: capitalize;
+    }
+  }
+
+
+}
