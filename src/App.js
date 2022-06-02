@@ -32,10 +32,10 @@ const App = () => {
 	}, [theme])
 
 	return (
-		<div className={theme}>
+		<>
 			<Header toggleTheme={toggleTheme} active={active} />
 			<Main posts={posts} />
-		</div>
+		</>
 	)
 }
 
