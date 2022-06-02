@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Button = ({ MdLightMode, MdDarkMode }) => {
+const Button = ({ MdLightMode, MdDarkMode, toggleTheme,active }) => {
+
 	return (
 		<>
-			<div className='toggle dark-mode'>
+			<div
+				className={`${active ? 'toggle dark-mode' : 'toggle light-mode'}`}
+				onClick={toggleTheme}>
 				<MdDarkMode className='moon' />
 				<div className='marker'></div>
 				<MdLightMode className='sun' />

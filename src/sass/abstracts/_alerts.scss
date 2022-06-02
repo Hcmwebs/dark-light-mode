@@ -10,8 +10,8 @@
 	width: 6rem;
 	height: 6rem;
 	margin: 0 auto;
-	border: 5px solid $bgColorLight;
+	border: 5px solid $bgColor;
 	border-radius: 50%;
-	border-top-color: $bgColorDark;
+	border-top-color: $bgColor;
 	animation: spinner 0.6s linear infinite;
 }

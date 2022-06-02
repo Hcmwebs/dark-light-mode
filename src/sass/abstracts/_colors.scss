@@ -1,8 +1,13 @@
+$bgColor: rgb(235, 250, 248);
+$fontColor: rgb(6, 20, 19);
+$primaryColor: rgb(58, 202, 187);
 
+/* === light-theme === */
 $bgColorLight: rgb(235, 250, 248);
 $fontColorLight: rgb(6, 20, 19);
 $primaryColorLight: rgb(58, 202, 187);
 
-$bgColorDark: $fontColorLight;
-$fontColorDark:$bgColorDark;
+/* ===  dark-theme === */
+$bgColorDark: rgb(6, 20, 19);
+$fontColorDark: rgb(235, 250, 248);
 $primaryColorDark: rgb(97, 213, 201);

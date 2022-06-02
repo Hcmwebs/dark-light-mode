@@ -61,6 +61,7 @@ const posts = [
     body: "dignissimos aperiam dolorem qui eum\nfacilis bodydam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
     date: new Date(2000,9,9),
     length:15,
+  },
   {
     userId: 1,
     id: 9,
