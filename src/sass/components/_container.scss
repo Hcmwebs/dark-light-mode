@@ -1,7 +1,8 @@
-@use '../abstracts/'as *;
+@use '../abstracts/' as *;
 
 .container {
-  width: min(100vw, 1000px);
- 
-  padding: 2rem;
+	width: min(100vw, 1000px);
+	padding: 2rem;
+	display: grid;
+	place-items: center;
 }

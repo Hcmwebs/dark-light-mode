@@ -6,9 +6,7 @@
 	border-radius: 2rem;
 	border: 0;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include flex(row,space-between,center);
 	position: relative;
 	transition: all 0.3s ease-in-out;
 
@@ -23,6 +21,7 @@
 		}
 		.marker {
 			right: 0;
+			background-color: $bgColorLight;
 		}
 	}
 
@@ -37,7 +36,7 @@
 		}
 
 		.marker {
-			background-color: $bgColorLight;
+			background-color: $bgColorDark;
 			left: 0;
 		}
 	}
@@ -50,12 +49,12 @@
 	}
 	.marker {
 		content: '';
-		width: 1.5rem;
-		height: 1.5rem;
-		background-color: $bgColor;
+		width: 1.6rem;
+		height: 1.6rem;
 		border-radius: 50%;
 		position: absolute;
-		top: 0;
+		top: 50%;
+		transform: translateY(-50%)
 	}
 
 	.sun {

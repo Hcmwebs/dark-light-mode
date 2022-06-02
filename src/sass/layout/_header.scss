@@ -1,15 +1,11 @@
-@use '../abstracts/' as  *;
+@use '../abstracts/' as *;
 
-header{
-	width: 100%;
-
+header {
 	.container {
-		@include flex(row,space-between,center);
+		@include flex(row, space-between, center);
 	}
 }
 h1 {
-	font-size: clamp(3.052rem, 10vw, 2.441rem);
-	font-weight: 400;
-	color: $primaryColor;
-
+	font-size: 3.052rem;
+	text-align: center;
 }
