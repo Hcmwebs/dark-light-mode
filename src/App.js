@@ -33,10 +33,8 @@ const App = () => {
 
 	return (
 		<div className={theme}>
-			<div className='background'>
-				<Header toggleTheme={toggleTheme} active={active} />
-				<Main posts={posts} />
-			</div>
+			<Header toggleTheme={toggleTheme} active={active} />
+			<Main posts={posts} />
 		</div>
 	)
 }
