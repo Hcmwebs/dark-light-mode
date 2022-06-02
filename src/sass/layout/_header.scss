@@ -2,9 +2,10 @@
 
 header{
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+
+	.container {
+		@include flex(row,space-between,center);
+	}
 }
 h1 {
 	font-size: clamp(3.052rem, 10vw, 2.441rem);
