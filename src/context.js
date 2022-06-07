@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState,useEffect,useContext } from 'react'
 
 const AppContext = React.createContext()
 
@@ -23,6 +23,11 @@ const AppProvider = ({ children }) => {
 			setActive(false)
 		}
 	}
+	useEffect(() => {
+		document.documentElement.className = theme
+		localStorage.setItem('theme', theme)
+	}, [theme])
+
 
 	return (
 		<AppContext.Provider value={{ theme, active, toggleTheme }}>
