@@ -1,39 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React, {useEffect } from 'react'
 import posts from './db/data'
 
 import Header from './Components/Header'
 import Main from './Components/Main'
+import {useGlobalContext} from './context'
 
-const getLocalStorageTheme = () => {
-	let theme = 'light-theme'
-	if (localStorage.getItem('theme')) {
-		theme = localStorage.getItem('theme')
-	}
-	return theme
-}
+
 
 const App = () => {
-	const [theme, setTheme] = useState(getLocalStorageTheme())
-	const [active, setActive] = useState(false)
+	const {theme} = useGlobalContext()
 
-	const toggleTheme = () => {
-		console.log('clicked')
-		if (theme === 'light-theme') {
-			setTheme('dark-theme')
-			setActive(true)
-		} else {
-			setTheme('light-theme')
-			setActive(false)
-		}
-	}
 	useEffect(() => {
 		document.documentElement.className = theme
 		localStorage.setItem('theme', theme)
 	}, [theme])
 
+
 	return (
 		<>
-			<Header toggleTheme={toggleTheme} active={active} />
+			<Header  />
 			<Main posts={posts} />
 		</>
 	)

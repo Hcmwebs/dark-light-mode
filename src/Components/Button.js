@@ -1,6 +1,9 @@
 import React from 'react'
+import {useGlobalContext} from '../context'
+import { MdLightMode, MdDarkMode } from 'react-icons/md'
 
-const Button = ({ MdLightMode, MdDarkMode, toggleTheme, active }) => {
+const Button = () => {
+	const {toggleTheme,active} = useGlobalContext();
 
 	return (
 		<>
